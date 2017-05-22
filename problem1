@@ -1,0 +1,25 @@
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, 
+#we get 3, 5, 6 and 9. 
+#The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+# step one: if % number/5 =0, add to list.
+# step two: do this for all numbers in range
+# step three: skip if number is already in list, skip it
+
+
+def seekingloop(max):
+  targets = [3,5]
+  multiples = []
+  for i in range(0,max):
+    for num in targets:
+      if i % num == 0 and i not in multiples:
+        multiples.append(i)
+        print "%r added" % i
+      else:
+        continue
+  print multiples
+  print sum(multiples)
+  
+seekingloop(1000)
