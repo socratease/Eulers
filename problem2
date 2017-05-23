@@ -24,8 +24,6 @@ fibonacciloop(90)
 
 if fibonaccilist[-1] > 90:
   del fibonaccilist[-1]
-  
-print fibonaccilist
 
 fibonaccieven = []
 
@@ -35,5 +33,4 @@ for i in fibonaccilist:
   else: 
     continue
 
-print fibonaccieven
 print sum(fibonaccieven)
