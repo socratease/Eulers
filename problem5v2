@@ -1,4 +1,4 @@
-list  = [x for x in range (2500,3000)]
+list  = [x for x in range (670442572786,670442572803)]
 list = list[::-1]
 
 list20 = []
@@ -78,22 +78,21 @@ createlists()
     
 list19 = list19[::-1]
 
-def checklists()
+def checklists():
   for n in list19:
-    if n is in list17:
-      if n is in list13:
-        if n is in list11:
-          if n is in list20:
-            if n is in list18:
-              if n is in list16:
-                if n is in list15:
-                  if n is in list14:
-                    if n is in list12:
+    if n in list17:
+      if n  in list13:
+        if n  in list11:
+          if n  in list20:
+            if n  in list18:
+              if n  in list16:
+                if n  in list15:
+                  if n  in list14:
+                    if n  in list12:
                       print "sucess: ", n
                       pause = raw_input("stoploop")
                     else:
                       continue
-  else:
-    continue
+  print "no match found"
 
 checklists()
