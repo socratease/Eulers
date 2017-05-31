@@ -1,0 +1,24 @@
+"""
+2520 is the smallest number that can be divided by each of the 
+numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that 
+is evenly divisible by all of the numbers from 1 to 20?
+"""
+found = False
+number = 1
+divisor = 1
+
+while found is False:
+  while divisor <= 10:
+    if number % divisor == 0:
+      divisor += 1
+    else: 
+      print number, "failed at: ", divisor
+      number += 1
+      divisor = 1
+      break
+print "Success: ", number
+found = True
+    
+
