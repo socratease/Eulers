@@ -1,1 +1,99 @@
+list  = [x for x in range (2500,3000)]
+list = list[::-1]
 
+list20 = []
+list19 = []
+list18 = []
+list17 = []
+list16 = []
+list15 = []
+list14 = []
+list13 = []
+list12 = []
+list11 = []
+
+def createlists():
+  
+  for x in list:
+    if x % 20 is 0:
+      list20.append(x)
+    else: 
+      continue
+  
+  for x in list:
+    if x % 19 is 0:
+      list19.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 18 is 0:
+      list18.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 17 is 0:
+      list17.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 16 is 0:
+      list16.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 15 is 0:
+      list15.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 14 is 0:
+      list14.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 13 is 0:
+      list13.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 12 is 0:
+      list12.append(x)
+    else: 
+      continue
+    
+  for x in list:
+    if x % 11 is 0:
+      list11.append(x)
+    else: 
+      continue
+    
+createlists()
+    
+19list = 19list[::-1]
+
+def checklists()
+  for n in 19list:
+    if n is in 18list:
+      if n is in 17list:
+        if n is in 16list:
+          if n is in 15list:
+            if n is in 14list:
+              if n is in 13list:
+                if n is in 12list:
+                  if n is in 11list:
+                    if n is in 20list:
+                      print "sucess: ", n
+                      pause = raw_input("stoploop")
+                    else:
+                      continue
+  else:
+    continue
+
+checklists()
