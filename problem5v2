@@ -76,19 +76,19 @@ def createlists():
     
 createlists()
     
-19list = 19list[::-1]
+list19 = list19[::-1]
 
 def checklists()
-  for n in 19list:
-    if n is in 18list:
-      if n is in 17list:
-        if n is in 16list:
-          if n is in 15list:
-            if n is in 14list:
-              if n is in 13list:
-                if n is in 12list:
-                  if n is in 11list:
-                    if n is in 20list:
+  for n in list19:
+    if n is in list17:
+      if n is in list13:
+        if n is in list11:
+          if n is in list20:
+            if n is in list18:
+              if n is in list16:
+                if n is in list15:
+                  if n is in list14:
+                    if n is in list12:
                       print "sucess: ", n
                       pause = raw_input("stoploop")
                     else:
