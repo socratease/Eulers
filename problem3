@@ -1,0 +1,38 @@
+"""The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+
+Note to Self: I kind of cheated here. I just took the input of the first loop, 
+and then recycled the loop on that number by changing the "factors" number.
+"""
+
+numbers = []
+counter = 2
+factors = [6857]
+matchfound = False
+x = max(factors)
+
+while counter < 13195:
+  numbers.append(counter)
+  counter += 1
+
+def seekingloop():
+  
+  global counter, matchfound, x
+  while matchfound is False:
+  
+    for n in numbers:
+      
+      if x % n is 0:
+        factors.append(n)
+        factors.append(x / n)
+        factors.remove(x)
+        print factors
+        matchfound = True
+      else:
+        continue
+      
+    print "done"
+
+
+seekingloop()
