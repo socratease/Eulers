@@ -11,7 +11,7 @@ from math import sqrt
 
 squares = []
 squares2 = []
-for n in range(10000,100000):
+for n in range(10000,150000):
   if sqrt(n)/int(sqrt(n)) is 1.0:
     squares.append(n)
 
@@ -24,4 +24,5 @@ for n in squares:
       pythagoreantriples.append(triple)
      
 for x in pythagoreantriples:
-  print sum(x)
+  if sum(x) is 1000.0:
+    print x
