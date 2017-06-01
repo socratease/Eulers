@@ -1,0 +1,28 @@
+
+
+trianglenumbers = []
+
+for n in range (100,200):
+  trianglenumbers.append(n+sum(range(0,n)))
+  
+print trianglenumbers
+
+trianglefactors = []
+counter = 0
+countermax = None
+
+for n in trianglenumbers:
+  del trianglefactors[:]
+  counter = 0
+  for x in range(1,n):
+    if n % x is 0:
+      trianglefactors.append(x)
+      counter += 1
+      if counter > countermax:
+        countermax = counter
+      else:
+        continue
+    else:
+      continue
+
+print countermax
